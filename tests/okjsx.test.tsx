@@ -1,13 +1,15 @@
 import { describe, expect, it, test } from 'bun:test'
 
+const OKJSX_PATH = '../src/okjsx'
+
 describe('ok-jsx API check', () => {
   it('should have a jsx function', () => {
-    const { jsx } = require('../../src/okjsx')
+    const { jsx } = require(OKJSX_PATH)
     expect(typeof jsx).toBe('function')
   })
 
   it('should have a Fragment function', () => {
-    const { Fragment } = require('../../src/okjsx')
+    const { Fragment } = require(OKJSX_PATH)
     expect(typeof Fragment).toBe('function')
   })
 })
@@ -52,12 +54,12 @@ describe('ok-jsx element conversion tests', () => {
 
 describe('ok-jsx fragment conversion tests', () => {
   test('fragment with no props and no children', () => {
-    const { Fragment } = require('../../src/okjsx')
+    const { Fragment } = require(OKJSX_PATH)
     expect(<></>).toEqual({ node: Fragment, attrs: {}, children: undefined })
   })
 
   test('fragment with no props and one children', () => {
-    const { Fragment } = require('../../src/okjsx')
+    const { Fragment } = require(OKJSX_PATH)
     expect(
       <>
         <br />
@@ -70,7 +72,7 @@ describe('ok-jsx fragment conversion tests', () => {
   })
 
   test('fragment wrapped into a component alias', () => {
-    const { Fragment } = require('../../src/okjsx')
+    const { Fragment } = require(OKJSX_PATH)
     const FragmentWrapper = (
       <>
         <br />
