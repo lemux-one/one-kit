@@ -17,9 +17,9 @@
       "extensions": [
         "oven.bun-vscode", // Bun support
         "streetsidesoftware.code-spell-checker", // Spell checker
-        "standard.vscode-standard" // StandardJS support
+        "esbenp.prettier-vscode" // Prettier for code formatting
         // ### add any other extensions needed for project
-        // "esbenp.prettier-vscode", // Prettier for code formatting
+        // "standard.vscode-standard", // StandardJS support
         // "bradlc.vscode-tailwindcss", // Tailwind CSS support (optional)
       ]
     }

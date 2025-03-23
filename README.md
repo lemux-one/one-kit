@@ -23,4 +23,3 @@ Opinionated toolkit for vanilla JS/TS web development
 - [ ] Server Side Rendering
 - [ ] Server-first functional components (Zero JS) capable of upgrading to client-side components (up to SPA-like interactivity) transparently via service workers, server sent events and client-side custom "hydration" techniques
 - [ ] Static Site Generation supporting a mixed mode coexisting with traditional dynamic site generation
-
