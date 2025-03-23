@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "strictNullChecks": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "okjsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "okjsx": ["./okjsx"]
+    }
   }
 }
