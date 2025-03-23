@@ -1,50 +1,26 @@
-# bun-starter
+# One Kit
 
-Opinionated starter boilerplate for Bun projects using VSCode and Docker for a fully local, containerized workspace
+Opinionated toolkit for vanilla JS/TS web development
 
-## Pre-requisites
+## General Goals
 
-1. Docker engine / Docker Desktop installed and running
-2. VSCode with Dev Containers extension installed and enabled. [Link to extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-3. Git installed and properly configured (the dev container will use the credentials manager to forward git commands issued inside the container)
-4. (Optional) GitHub CLI
+1. Provide a thin layer of utils/helpers to enhance DX
+2. Avoid third party dependencies when possible
+3. Bun as first class supported runtime/platform with NodeJS officially supported as a deployment target where Bun is not available
+4. Take advantage of the platform (including the browser) to the maximum extent
+5. Server-first as the overall unbreakable principle
 
-## Getting started
+## Non Goals
 
-1. Clone into new project
+1. General purpose toolkit for any conceivable use case
+2. Community driven development
+3. Support for any non-current LTS version provided by the underlying platform (server runtime/web browser)
+4. Publish an NPM (or similar) package
 
-- Using plain git:
+## General Roadmap / Desired Features
 
-```sh
-git clone --depth=1 https://github.com/lemux-one/bun-starter.git <new-repo-name>
-cd <new-repo-name>
-rm -rf .git
-git init .
-```
+- [ ] Simplistic JSX implementation
+- [ ] Server Side Rendering
+- [ ] Server-first functional components (Zero JS) capable of upgrading to client-side components (up to SPA-like interactivity) transparently via service workers, server sent events and client-side custom "hydration" techniques
+- [ ] Static Site Generation supporting a mixed mode coexisting with traditional dynamic site generation
 
-- Using GitHub CLI
-
-```sh
-gh repo create <new-repo-name> --template="https://github.com/lemux-one/bun-starter.git"
-gh repo create <new-repo-name> --template="lemux-one/bun-starter"
-```
-
-2. Open folder with VSCode
-
-```sh
-bun install
-```
-
-3. Rename project (excluding README.md file if keeping original doc). Suggested methods to accomplish it:
-
-- Search and replace "bun-starter" with `<new-repo-name>` using VSCode's Search & Replace features.
-
-4. (Optional, but recommended) Copy `.devcontainer/.env.example` to `.devcontainer/.env` and edit it accordingly
-
-5. Tweak `.devcontainer/devcontainer.json` to fit specific use case if defaults make no sense
-
-6. Reopen in container [Dev Containers: Reopen in Container] VSCode command
-
-7. Run `bun dev` in a console
-
-8. Edit/Code at will ...
