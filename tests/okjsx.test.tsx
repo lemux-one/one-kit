@@ -1,6 +1,6 @@
 import { describe, expect, it, test } from 'bun:test'
 
-const OKJSX_PATH = '../src/okjsx'
+const OKJSX_PATH = '../src/ok-jsx'
 
 describe('ok-jsx API check', () => {
   it('should have a jsx function', () => {

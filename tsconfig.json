@@ -3,11 +3,11 @@
     "strictNullChecks": true,
     "skipLibCheck": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "okjsx",
+    "jsxImportSource": "ok-jsx",
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
-      "okjsx": ["./okjsx"]
+      "ok-jsx": ["./ok-jsx"]
     }
   }
 }

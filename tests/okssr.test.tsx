@@ -1,5 +1,5 @@
 import { test, expect, describe } from 'bun:test'
-import { html } from '@/okssr'
+import { html } from '@/ok-ssr'
 
 describe('ok-ssr HTML fragments rendering tests', () => {
   test('empty fragment', () => {
