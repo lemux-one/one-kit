@@ -6,7 +6,7 @@
       "internalConsoleOptions": "neverOpen",
       "request": "attach",
       "name": "Attach Bun",
-      "url": "ws://localhost:6499/bun-starter",
+      "url": "ws://localhost:6499/one-kit",
       "stopOnEntry": false
     }
   ]

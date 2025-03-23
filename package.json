@@ -1,8 +1,8 @@
 {
-  "name": "bun-starter",
+  "name": "one-kit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "bun --hot --inspect=localhost:6499/bun-starter index.ts"
+    "dev": "bun --hot --inspect=localhost:6499/one-kit index.ts"
   },
   "devDependencies": {
     "ts-standard": "^12.0.2"

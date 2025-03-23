@@ -1,5 +1,5 @@
 {
-  "name": "bun-starter",
+  "name": "one-kit",
   // ### this section is for docker-compose based dev container
   // "dockerComposeFile": "docker-compose.yml",
   // "service": "app",
