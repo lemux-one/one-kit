@@ -4,25 +4,8 @@
   "scripts": {
     "dev": "bun --hot --inspect=localhost:6499/one-kit index.ts"
   },
-  "prettier": {
-    "singleQuote": true,
-    "semi": false,
-    "trailingComma": "all",
-    "tabWidth": 2,
-    "printWidth": 80
-  },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint"
-    ]
-  },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@types/bun": "^1.2.5"
   }
 }
