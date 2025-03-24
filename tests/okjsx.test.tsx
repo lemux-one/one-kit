@@ -20,7 +20,7 @@ describe('ok-jsx element conversion tests', () => {
   })
 
   test('span element with no props and no children', () => {
-    expect(<span></span>).toEqual({
+    expect(<span>{}</span>).toEqual({
       node: 'span',
       attrs: {},
       children: undefined,
@@ -55,19 +55,24 @@ describe('ok-jsx element conversion tests', () => {
 describe('ok-jsx fragment conversion tests', () => {
   test('fragment with no props and no children', () => {
     const { Fragment } = require(OKJSX_PATH)
+    // biome-ignore lint/complexity/noUselessFragments: required for proper testing a case
     expect(<></>).toEqual({ node: Fragment, attrs: {}, children: undefined })
   })
 
-  test('fragment with no props and one children', () => {
+  test('fragment with no props and children', () => {
     const { Fragment } = require(OKJSX_PATH)
     expect(
       <>
+        <br />
         <br />
       </>,
     ).toEqual({
       node: Fragment,
       attrs: {},
-      children: { node: 'br', attrs: {}, children: undefined },
+      children: [
+        { node: 'br', attrs: {}, children: undefined },
+        { node: 'br', attrs: {}, children: undefined },
+      ],
     })
   })
 

@@ -41,9 +41,7 @@ export function html(jsxNode: any): string {
     const doctype = node === 'html' ? '<!DOCTYPE html>' : ''
     return isSelfClosing(node)
       ? `${doctype}<${node}${renderAttrs(attrs)}/>`
-      : `${doctype}<${node}${renderAttrs(attrs)}>${renderChildren(
-          children,
-        )}</${node}>`
+      : `${doctype}<${node}${renderAttrs(attrs)}>${renderChildren(children)}</${node}>`
   }
   console.error(`Unsupported JSX node: ${JSON.stringify(jsxNode)}`)
   return ''
